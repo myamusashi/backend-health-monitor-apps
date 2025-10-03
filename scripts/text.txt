@@ -1,0 +1,14 @@
+Register
+	Nama: string
+	umur: DATE
+	tb: float
+	berat_badan: int
+	jenis-kelamin: string
+	email: string
+	password: TEXT
+Login:
+	email: string
+	password: TEXT
+	(optional) username: string
+
+Jurnal 3 judul

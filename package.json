@@ -2,15 +2,30 @@
   "name": "backend-health-monitor-apps",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+		"dev:server": "nodemon --watch . --exec npx tsx index.ts"
+	},
   "private": true,
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
     "@types/bun": "latest",
-    "@types/express": "^5.0.3"
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/pg": "^8.15.5",
+    "prettier": "^3.6.2"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.10",
+    "npx": "^10.2.2",
+    "pg": "^8.16.3",
+    "pg-promise": "^12.2.0",
+    "tsx": "^4.20.6"
   }
 }

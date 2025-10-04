@@ -6,8 +6,21 @@
       "bun": {
         "pkg-path": "bun"
       },
+      "gcc": {
+        "pkg-path": "gcc"
+      },
+      "iptables": {
+        "pkg-path": "iptables",
+        "systems": [
+          "aarch64-linux",
+          "x86_64-linux"
+        ]
+      },
       "prettier": {
         "pkg-path": "prettier"
+      },
+      "stdenv": {
+        "pkg-path": "stdenv"
       }
     },
     "hook": {},
@@ -132,6 +145,200 @@
       "priority": 5
     },
     {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/kl84cl4z8341kz565ffbqm0znh9vfg1s-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:00:43.171532Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/9y6c6nr6ja7vq4lal10f2mmkql2swjjs-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/jm47vmrkhg9nbriwixsmnzg3gg30g7ig-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/8dq4c0hghzqfqbvdh3zx34m8a7c7kzpv-gcc-wrapper-14.3.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/xgd6sn2nbpk6p8hfkwfnaggapfa486id-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:29:41.456152Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/x2q2m245k44wxcskdknl5xdqrsya7fcy-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/f5k9bkq97gqc4ajmbavv3wxdwcqmng64-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/hf8w753nxqwkc5y5kjx33fx8fxw2dczp-gcc-wrapper-14.3.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/v6jqsamh3qyyn7ixm5ihdqjlhibg0hfd-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:56:36.560936Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/phk4r12ylcy8i9j4fy4ijp1938bbk48w-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/jxc1hlmsw3pxc12z8hdznriv5d7hjqcb-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/kci6l8xmpmzyzi6k89c91580k4hdnp1d-gcc-wrapper-14.3.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gcc",
+      "broken": false,
+      "derivation": "/nix/store/i9kj1nhzkg91xsq8ny4z4hipl0b42kad-gcc-wrapper-14.3.0.drv",
+      "description": "GNU Compiler Collection, version 14.3.0 (wrapper script)",
+      "install_id": "gcc",
+      "license": "GPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "gcc-wrapper-14.3.0",
+      "pname": "gcc",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:26:57.657160Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "14.3.0",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "info": "/nix/store/12sy2qyk3qir1rg4jdrdnj91jaw50my2-gcc-wrapper-14.3.0-info",
+        "man": "/nix/store/ds5j2vvwhdvfgkjp7jnfx82bqswks46x-gcc-wrapper-14.3.0-man",
+        "out": "/nix/store/95k9rsn1zsw1yvir8mj824ldhf90i4qw-gcc-wrapper-14.3.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "iptables",
+      "broken": false,
+      "derivation": "/nix/store/3yv4p5wg1sf1wbbdp3snbxj2ijvqhchn-iptables-1.8.11.drv",
+      "description": "Program to configure the Linux IP packet filtering ruleset",
+      "install_id": "iptables",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "iptables-1.8.11",
+      "pname": "iptables",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:30:00.395480Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.11",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/ylpzm3wn8xrwsy68g2k6h4lrnf0sr4f2-iptables-1.8.11-dev",
+        "lib": "/nix/store/l45gfkcfyx3p529d8cp5zfs3wq5dn4dx-iptables-1.8.11-lib",
+        "man": "/nix/store/4r298zzfywwilb6gaap9iqp4qspl8ma2-iptables-1.8.11-man",
+        "out": "/nix/store/rj478f7yn1y0hp0ibw1k9hjwgx4izdps-iptables-1.8.11"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "iptables",
+      "broken": false,
+      "derivation": "/nix/store/9qnjgd5vx73f8ibl1fpjhzvkyfawrwfj-iptables-1.8.11.drv",
+      "description": "Program to configure the Linux IP packet filtering ruleset",
+      "install_id": "iptables",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "iptables-1.8.11",
+      "pname": "iptables",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:27:17.424498Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.8.11",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "dev": "/nix/store/mapxv0sc6d58rlsjf6yr15c5abjfirhy-iptables-1.8.11-dev",
+        "lib": "/nix/store/hnzd7yy52arxllp9ilsxjankih7kf37j-iptables-1.8.11-lib",
+        "man": "/nix/store/miaryccwkfzm8jlbax7bsl98shjgxd1k-iptables-1.8.11-man",
+        "out": "/nix/store/0aiv0yaim1gbwxscvmngwzn0311h2z06-iptables-1.8.11"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "prettier",
       "broken": false,
       "derivation": "/nix/store/15483wc7579kgz9zhhmfg6h6jj0dc1vb-prettier-3.6.2.drv",
@@ -242,6 +449,106 @@
       ],
       "outputs": {
         "out": "/nix/store/zbn6kjr06qgfvbc9cl95mnxkabgph30b-prettier-3.6.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "stdenv",
+      "broken": false,
+      "derivation": "/nix/store/wq5h3jz23fk2ga5y0bgiv256wggfgm7r-stdenv-darwin.drv",
+      "description": "The default build environment for Unix packages in Nixpkgs",
+      "install_id": "stdenv",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "stdenv-darwin",
+      "pname": "stdenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:02:29.096877Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "darwin",
+      "outputs_to_install": [],
+      "outputs": {
+        "out": "/nix/store/pgrkqlci4gld1kp0qdhjzp1zazxblj2b-stdenv-darwin"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "stdenv",
+      "broken": false,
+      "derivation": "/nix/store/74qvk0yp9n1pya3kb98l2lbwsdymkikp-stdenv-linux.drv",
+      "description": "The default build environment for Unix packages in Nixpkgs",
+      "install_id": "stdenv",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "stdenv-linux",
+      "pname": "stdenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:32:03.972047Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "linux",
+      "outputs_to_install": [],
+      "outputs": {
+        "out": "/nix/store/fp4bszjavnlf2v14j5asdyv2b8igc5cf-stdenv-linux"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "stdenv",
+      "broken": false,
+      "derivation": "/nix/store/x3dwrb31v88mlv5w963nl1cnn34ml4nw-stdenv-darwin.drv",
+      "description": "The default build environment for Unix packages in Nixpkgs",
+      "install_id": "stdenv",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "stdenv-darwin",
+      "pname": "stdenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T02:58:21.230075Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "darwin",
+      "outputs_to_install": [],
+      "outputs": {
+        "out": "/nix/store/bih3vjig4if6jy5i92m4wzqkqvrixnxq-stdenv-darwin"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "stdenv",
+      "broken": false,
+      "derivation": "/nix/store/p76r0cwlf6k97ibprrpfd8xw0r8wc3nx-stdenv-linux.drv",
+      "description": "The default build environment for Unix packages in Nixpkgs",
+      "install_id": "stdenv",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "name": "stdenv-linux",
+      "pname": "stdenv",
+      "rev": "c23193b943c6c689d70ee98ce3128239ed9e32d1",
+      "rev_count": 861038,
+      "rev_date": "2025-09-13T06:43:22Z",
+      "scrape_date": "2025-09-15T03:29:28.079896Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "version": "linux",
+      "outputs_to_install": [],
+      "outputs": {
+        "out": "/nix/store/jrw7q6v8q74hhv43zgpq7i4jmxj9nwlj-stdenv-linux"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

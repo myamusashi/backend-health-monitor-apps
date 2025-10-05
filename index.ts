@@ -1,6 +1,6 @@
 import express from 'express';
 import { Registration } from './src/controlers/register';
-import { authenticateToken } from './src/middleware/jwt';
+import { authenticateToken } from './src/middleware/jsonwebtoken';
 import { LoginControler } from './src/controlers/login';
 
 const app = express();

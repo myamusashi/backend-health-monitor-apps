@@ -1,20 +1,11 @@
 import type { Request, Response } from "express";
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 import { createHttpResponse } from "../helpers/httpResponse";
 import type { PasienWithPassword } from "../models/pasien";
 import databaseServices from "../services/databaseServices";
-import { generateAccessToken } from "../middleware/jwt";
+import { generateAccessToken } from "../middleware/jsonwebtoken";
 
 class login {
-	private readonly JWT_SECRET: string;
-	private readonly JWT_EXPIRES_IN: string;
-
-	constructor() {
-		this.JWT_SECRET = process.env.accesTokenSecret || '';
-		this.JWT_EXPIRES_IN = "24h";
-	}
-
 	async handle(req: Request, res: Response): Promise<Response> {
 		const Res = createHttpResponse(res);
 
@@ -27,7 +18,7 @@ class login {
 			if (this.isEmpty(username) && this.isEmpty(email))
 				return Res.badRequest("username, password atau email masih kosong");
 
-			if (!this.isValidEmail(email))
+			if (!this.isValidEmail(email) && !username)
 				return Res.badRequest();
 
 			let user;
@@ -42,8 +33,8 @@ class login {
 			if (!user)
 				return Res.unauthorized("Username atau email tidak valid");
 
-			// if (!user.is_active)
-			// 	return Res.forbidden("Akun tidak aktif. Silahkan hubungi administrator");
+			if (!user.is_active)
+				return Res.forbidden("Akun tidak aktif. Silahkan hubungi administrator");
 
 			const isPasswordValid = await this.verifyPassword(password, user.password);
 

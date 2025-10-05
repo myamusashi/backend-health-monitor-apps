@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import databaseServices from '../services/databaseServices';
-import { generateAccessToken } from '../middleware/jwt';
+import { generateAccessToken } from '../middleware/jsonwebtoken';
 import { createHttpResponse } from '../helpers/httpResponse';
 import type { PasienWithPassword } from '../models/pasien';
 
